@@ -1,0 +1,10 @@
+scp -i "pro.pem" S3.py ec2-user@ec2-34-224-56-25.compute-1.amazonaws.com:/home/ec2-user/S3.py
+
+
+scp -i "pro.pem" log.html ec2-user@ec2-34-224-56-25.compute-1.amazonaws.com:/home/ec2-user/templates/log.html
+
+
+scp -i "pro.pem" file.html ec2-user@ec2-34-224-56-25.compute-1.amazonaws.com:/home/ec2-user/templates/file.html
+
+scp -i "pro.pem" log.png ec2-user@ec2-34-224-56-25.compute-1.amazonaws.com:/home/ec2-user/static/log.png
+scp -i "pro.pem" reg.png ec2-user@ec2-34-224-56-25.compute-1.amazonaws.com:/home/ec2-user/static/reg.png

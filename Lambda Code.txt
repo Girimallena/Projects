@@ -1,0 +1,17 @@
+import json
+import boto3
+
+def lambda_handler(event, context):
+    # TODO implement
+   ACCESS_KEY="AKIAVIGWAIF5MKAXxxx"
+   SECRET_KEY="sa1XAc9BsGEZWJJVG98v2W9Mc1yLExxxx"  // Input your access keys Changed it ...
+   AWS_REGION="us-east-1"
+   email=event.get('email')
+   arn=event.get('arn')
+   url=event.get('URL')
+   snsclient=boto3.client('sns',
+                            aws_access_key_id=ACCESS_KEY,
+                            aws_secret_access_key=SECRET_KEY,
+                            region_name=AWS_REGION)
+    
+   snsclient.publish(TopicArn=arn,Message="New File Uploaded for which your Email id is added as notifier. Access file using this link  :" +url,Subject="New Entry")

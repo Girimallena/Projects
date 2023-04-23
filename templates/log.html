@@ -1,0 +1,110 @@
+
+<html>
+<head></head>    
+<style>
+
+body {
+  max-width: 50%;
+  margin: auto;
+  background: white;
+  padding: 10%;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+/* input{
+
+    padding: 10px;
+} */
+tr{
+    /* background-color: aquamarine; */
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+</style>
+<body>
+<h1 align="left"> Sign in/Sign up!!!!</h1>
+<table border="2">
+<tr>
+
+<td>   
+
+<form action="SIGNIN" method="post">
+    
+    
+    
+    <div>
+        <h1> Sign in <img src="{{ url_for('static', filename='log.png') }}" width="40" height="40"/> </h1>
+       
+    </div>
+    <div class="container4">
+      <label for="logname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="logname" required>
+    </div> <br> 
+    <div>
+      <label for="logpwd"><b>Password </b></label>
+      <input type="password" placeholder="Enter Password here" name="logpwd" required>
+      <br><br>
+    </div>
+    <div>  
+      <input type="submit" value="Log In">
+     
+    </div>
+
+   
+</form>
+</td>
+<td>   
+
+    <form action="SIGNUP" method="post">
+        
+        
+        <div>
+            <h1> Register  <img src="{{ url_for('static', filename='reg.png') }}" width="40" height="40"/> </h1>
+           
+        </div>
+    
+        <div class="container4">
+          <label for="regname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="regname" required>
+        </div> <br> 
+        <div>
+          <label for="regpwd"><b>Password      </b></label>
+          <input type="password" placeholder="Enter Password here" name="regpwd" required>
+          <br><br>
+        </div>
+        <div>  
+          <input type="submit" value="Register">
+         
+        </div>
+    
+       
+    </form>
+    </td>
+
+
+
+</tr>
+
+</table> 
+
+</body>
+
+</html>  
